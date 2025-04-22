@@ -119,10 +119,9 @@ class MainActivity : ComponentActivity() {
                             style = MaterialTheme.typography.titleMedium
                         )
 
-                        LazyColumn {
-                            items(viewModel.registeredClasses.size) { index ->
 
-                                val classItem = viewModel.registeredClasses[index]
+                        ///fill in function header for registered classes here
+
 
                                 Card(
                                     modifier = Modifier
@@ -146,13 +145,8 @@ class MainActivity : ComponentActivity() {
                                         }
 
                                         // Button to remove the class
-                                        Button(
-                                            onClick = {
-                                                viewModel.deregisterClass(classItem)
-                                            }
-                                        ) {
-                                            Text("Remove")
-                                        }
+                                        //fill in here
+
                                     }
                                 }
                             }

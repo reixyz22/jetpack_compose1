@@ -2,30 +2,22 @@ package com.example.jetpack_compose1
 
 import androidx.compose.runtime.*
 import androidx.lifecycle.ViewModel
+import java.util.Collections
 
-// No separate file for this class
-class SchoolClassItem(
-    val id: Int,
-    val name: String,
-    val instructor: String,
-    val time: String
-)
+
+//something missing here
+
 
 class ClassViewModel : ViewModel() {
 
-    // This is our fake backend data
+    // This is the data for our classes
     val availableClasses = listOf(
-        SchoolClassItem(1, "Intro to Android", "Prof. Lee", "Mon 10AM"),
-        SchoolClassItem(2, "Data Structures", "Dr. Kim", "Tue 2PM"),
-        SchoolClassItem(3, "UI Design", "Dr. Park", "Wed 1PM"),
-        SchoolClassItem(4, "AI Ethics", "Prof. Singh", "Thu 11AM"),
-        SchoolClassItem(5, "Cloud Computing", "Dr. Chan", "Fri 3PM")
+        //fill me
     )
 
-    // Registered classes (mutable list wrapped in Compose state)
-    private val _registeredClasses = mutableStateListOf<SchoolClassItem>()
-    val registeredClasses: List<SchoolClassItem>
-        get() = _registeredClasses
+
+    //something missing here
+
 
     // Function to add a class
     fun registerClass(item: SchoolClassItem) {
